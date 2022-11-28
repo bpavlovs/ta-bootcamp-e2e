@@ -1,7 +1,7 @@
 const { Given, When, Then } = require('@wdio/cucumber-framework');
 
 Given("I am on the home page", async () => {
-    await browser.url("https://www.newegg.com/");
+    await browser.url("https://www.newegg.com");
 });
 
 Given("The promo banner is closed", async () => {
@@ -38,7 +38,7 @@ When("Click the internet shop logo", async () => {
 
 Then("I should see at least {int} items", async (count) => {
     const items = await $$('div[class="item-cell"]');
-    expect(items).toBeElementsArrayOfSize({ gte: count });
+    await expect(items).toBeElementsArrayOfSize({ gte: count });
 });
 
 Then("I should be taken back to home page", async () => {
