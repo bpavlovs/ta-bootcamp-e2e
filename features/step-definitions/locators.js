@@ -1,4 +1,3 @@
-
 module.exports = {
     promoBanner: 'img[class="modal-Website-img"]',
     closeButton: 'button[class="close"]',
@@ -6,5 +5,17 @@ module.exports = {
     searchButton: 'button[class="ico ico-search"]',
     bestDealsButton: 'a[id="trendingBanner_720202"]',
     shopLogo: 'a[class="header2021-logo-img"]',
-    items: 'div[class="item-cell"]'
+    items: 'div[class="item-cell"]',
+    itemQuantity: 'input[class="qty-box-input"]',
+    addToCartButton: 'button[class="btn btn-primary btn-wide"]',
+    addProtectionButton: 'button[class="btn btn-primary"]',
+    noProtectionButton: 'button[class="btn"]',
+    viewCartButton: 'button[title="View Cart"]',
+    expectedTitle: 'h1[class="product-title"]',
+    actualTitle: 'a[class="item-title"]',
+    removeItemButton: 'i[aria-label="trash"]',
+    cartMessage: 'div[class="message-information"]',
+    increaseQuantityButton: 'button[class="qty-box-plus fas fa-plus"]',
+    itemQuantityInput: 'input[class=qty-box-input]',
+    cartItemQuantityInput: 'input[class="form-text"]'
 };

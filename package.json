@@ -17,6 +17,8 @@
     "wdio-chromedriver-service": "^8.0.0"
   },
   "scripts": {
-    "test": "wdio run wdio.conf.js"
+    "test": "wdio run wdio.conf.js",
+    "initialTaskFeature": "wdio run wdio.conf.js --spec bootcamp_e2e.feature",
+    "additionalTaskFeature": "wdio run wdio.conf.js --spec additional_task.feature"
   }
 }

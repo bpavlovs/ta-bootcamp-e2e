@@ -1,5 +1,9 @@
-const { Given, When, Then } = require('@wdio/cucumber-framework');
+const { Before, Given, When, Then } = require('@wdio/cucumber-framework');
 const locators = require('./locators');
+
+Before(async function () {
+    await browser.reloadSession()
+});
 
 Given("I am on the home page", async () => {
     await browser.url("https://www.newegg.com");
